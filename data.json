@@ -1,0 +1,38 @@
+[
+  {
+      "id": 1,
+      "nombre": "Lionel",
+      "curso": "economia",
+      "edad": 13
+  },
+  {
+      "id": 2,
+      "nombre": "Emiliano",
+      "curso": "bachiller",
+      "edad": 17
+  },
+  {
+      "id": 3,
+      "nombre": "Martin",
+      "curso": "bachiller",
+      "edad": 16
+  },
+  {
+      "id": 4,
+      "nombre": "Julian",
+      "curso": "economia",
+      "edad": 15
+  },
+  {
+      "id": 5,
+      "nombre": "Nicolas",
+      "curso": "comunicaciones",
+      "edad": 16
+  },
+  {
+      "id": 6,
+      "nombre": "Alexis",
+      "curso": "economia",
+      "edad": 17
+  }
+]

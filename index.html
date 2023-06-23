@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Carrito de Compras</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,37 +13,71 @@
     <h1>Carrito de Compras</h1>
   </header>
 
-  <div id="carrito">
-    <section id="productos">
-      <h2>Productos</h2>
-      <ul id="productos-lista">
-        <li>
-          <h3>Producto 1</h3>
-          <p>Precio: $10.00</p>
-          <button class="agregar-carrito">Agregar al Carrito</button>
-        </li>
-        <li>
-          <h3>Producto 2</h3>
-          <p>Precio: $20.00</p>
-          <button class="agregar-carrito">Agregar al Carrito</button>
-        </li>
-        <!-- Agrega más productos aquí -->
-      </ul>
-    </section>
-
-    <section id="carrito-seccion">
-      <h2>Carrito de Compras</h2>
-      <ul id="carrito-lista">
-        <!-- Los productos agregados se mostrarán aquí -->
-      </ul>
-
-      <div id="carrito-total">
-        Total: $<span id="carrito-total-valor">0.00</span>
+  <main>
+    <section class="productos">
+      <div class="producto">
+        <img src="producto1.jpg" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>Precio: $10.00</p>
+        <button class="btn-agregar" data-id="1">Agregar al Carrito</button>
       </div>
-
-      <button id="vaciar-carrito">Vaciar Carrito</button>
+      <div class="producto">
+        <img src="producto2.jpg" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p>Precio: $15.00</p>
+        <button class="btn-agregar" data-id="2">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="producto1.jpg" alt="Producto 3">
+        <h3>Producto 3</h3>
+        <p>Precio: $12.50</p>
+        <button class="btn-agregar" data-id="3">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="producto2.jpg" alt="Producto 4">
+        <h3>Producto 4</h3>
+        <p>Precio: $8.00</p>
+        <button class="btn-agregar" data-id="4">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="producto1.jpg" alt="Producto 5">
+        <h3>Producto 5</h3>
+        <p>Precio: $20.00</p>
+        <button class="btn-agregar" data-id="5">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="producto2.jpg" alt="Producto 6">
+        <h3>Producto 6</h3>
+        <p>Precio: $18.50</p>
+        <button class="btn-agregar" data-id="6">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="producto1.jpg" alt="Producto 7">
+        <h3>Producto 7</h3>
+        <p>Precio: $14.00</p>
+        <button class="btn-agregar" data-id="7">Agregar al Carrito</button>
+      </div>
+      <div class="producto">
+        <img src="producto2.jpg" alt="Producto 8">
+        <h3>Producto 8</h3>
+        <p>Precio: $9.99</p>
+        <button class="btn-agregar" data-id="8">Agregar al Carrito</button>
+      </div>
+      <!-- Agrega más productos aquí -->
     </section>
-  </div>
+
+    <aside class="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul id="lista-carrito">
+        <!-- Aquí se agregan los productos del carrito -->
+      </ul>
+      <p id="total">Total: $0.00</p>
+      <button id="btn-vaciar">Vaciar Carrito</button>
+    </aside>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+
+
 
   <script src="script.js"></script>
 </body>
